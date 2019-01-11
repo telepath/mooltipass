@@ -401,5 +401,66 @@ const uint8_t PROGMEM keyboardLUT_DE[95] =
         ALTGR_MASK|KEY_7,               // 0x7B {
         SHIFT_MASK|KEY_BACKSLASH,       // 0x7C |
         ALTGR_MASK|KEY_0,               // 0x7D }
-        ALTGR_MASK|KEY_BRACKET_RIGHT    // 0x7E ~
+        ALTGR_MASK|KEY_BRACKET_RIGHT,   // 0x7E ~
+        KEY_NONE,                       // 0x7F DEL
+        KEY_NONE,                       // 0x80 €
+        KEY_NONE,                       // 0x81 
+        KEY_NONE,                       // 0x82 
+        KEY_NONE,                       // 0x83 
+        ALTGR_MASK|KEY_V,               // 0x84 „
+        ALTGR_MASK|KEY_PERIOD,          // 0x85 …
+        KEY_NONE,                       // 0x86 
+        KEY_NONE,                       // 0x87 
+        KEY_NONE,                       // 0x88 
+        KEY_NONE,                       // 0x89 
+        KEY_NONE,                       // 0x8A 
+        KEY_NONE,                       // 0x8B 
+        KEY_NONE,                       // 0x8C 
+        KEY_NONE,                       // 0x8D 
+        KEY_NONE,                       // 0x8E 
+        KEY_NONE,                       // 0x8F 
+        KEY_NONE,                       // 0x90 
+        KEY_NONE,                       // 0x91 
+        KEY_NONE,                       // 0x92 
+        ALTGR_MASK|KEY_B,               // 0x93 “
+        ALTGR_MASK|KEY_N,               // 0x94 ”
+        ALTGR_MASK|KEY_COMMA,           // 0x95 
+        ALTGR_MASK|KEY_SLASH,           // 0x96 –
+        KEY_NONE,                       // 0x97 
+        KEY_NONE,                       // 0x98 
+        KEY_NONE,                       // 0x99 
+        KEY_NONE,                       // 0x9A 
+        KEY_NONE,                       // 0x9B 
+        KEY_NONE,                       // 0x9C 
+        KEY_NONE,                       // 0x9D 
+        KEY_NONE,                       // 0x9E 
+        KEY_NONE,                       // 0x9F 
+ 
+        SHIFT_MASK|KEY_3,               // 0xA7
+        
+        ALTGR_MASK|KEY_6,               // 0xAC ¬
+ 
+        SHIFT_MASK|0x35,                // 0xB0 °
+ 
+        ALTGR_MASK|KEY_2,               // 0xB2 ²
+        ALTGR_MASK|KEY_3,               // 0xB3 ³
+ 
+        ALTGR_MASK|KEY_M,               // 0xB5 µ
+ 
+        ALTGR_MASK|KEY_COMMA,           // 0xB7 ·
+
+        ALTGR_MASK|KEY_1,               // 0xB2 ¹
+ 
+        ALTGR_MASK|KEY_Z,               // 0xBB »
+        ALTGR_MASK|KEY_4,               // 0xBC ¼
+        ALTGR_MASK|KEY_5,               // 0xBD ½
+ 
+        SHIFT_MASK|KEY_APOSTROPHE,      // 0xC4 Ä
+
+        ALTGR_MASK|SHIFT_MASK|KEY_APOSTROPHE,      // 0xC6 Æ
+
+ ¡⅛£¤⅜⅝⅞™±°¿˛
+  ΩŁ€®Ŧ¥↑ıØÞ°¯
+  ÆẞÐªŊĦ˙&Ł
+  ›‹©‚‘’º×÷—
 };
