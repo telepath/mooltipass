@@ -1014,7 +1014,7 @@ RET_TYPE usbKeybPutChar(char ch)
         // TAB
         return usbKeyboardPress(KEY_TAB, 0);
     }
-    else if ((ch < ' ') || (ch > '~'))
+    else if ((ch < ' ') || (ch > 'ÿ'))
     {
         // The LUT only covers from ' ' to ~ included
         return RETURN_COM_NOK;
