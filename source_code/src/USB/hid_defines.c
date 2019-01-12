@@ -305,7 +305,7 @@ const uint8_t PROGMEM keyboardLUT_ES[95] =
     0x71, // 0x7d }
     0x61, // 0x7e ~
 };
-const uint8_t PROGMEM keyboardLUT_DE[95] = 
+const uint8_t PROGMEM keyboardLUT_DE[225] = 
 {
         KEY_SPACE,                      // 0x20
         SHIFT_MASK|KEY_1,               // 0x21 !
@@ -405,62 +405,131 @@ const uint8_t PROGMEM keyboardLUT_DE[95] =
         KEY_NONE,                       // 0x7F DEL
         KEY_NONE,                       // 0x80 €
         KEY_NONE,                       // 0x81 
-        KEY_NONE,                       // 0x82 
-        KEY_NONE,                       // 0x83 
+        ALTGR_MASK|SHIFT_MASK|KEY_V,    // 0x82 ‚
+        KEY_NONE,                       // 0x83 ƒ
         ALTGR_MASK|KEY_V,               // 0x84 „
         ALTGR_MASK|KEY_PERIOD,          // 0x85 …
-        KEY_NONE,                       // 0x86 
-        KEY_NONE,                       // 0x87 
-        KEY_NONE,                       // 0x88 
-        KEY_NONE,                       // 0x89 
-        KEY_NONE,                       // 0x8A 
-        KEY_NONE,                       // 0x8B 
-        KEY_NONE,                       // 0x8C 
+        KEY_NONE,                       // 0x86 †
+        KEY_NONE,                       // 0x87 ‡
+        KEY_NONE,                       // 0x88 ˆ
+        KEY_NONE,                       // 0x89 ‰
+        KEY_NONE,                       // 0x8A Š
+        ALTGR_MASK|SHIFT_MASK|KEY_X,    // 0x8B ‹
+        KEY_NONE,                       // 0x8C Œ
         KEY_NONE,                       // 0x8D 
-        KEY_NONE,                       // 0x8E 
+        KEY_NONE,                       // 0x8E Ž
         KEY_NONE,                       // 0x8F 
         KEY_NONE,                       // 0x90 
-        KEY_NONE,                       // 0x91 
-        KEY_NONE,                       // 0x92 
+        ALTGR_MASK|SHIFT_MASK|KEY_B,    // 0x91 ‘
+        ALTGR_MASK|SHIFT_MASK|KEY_N,    // 0x92 ’
         ALTGR_MASK|KEY_B,               // 0x93 “
         ALTGR_MASK|KEY_N,               // 0x94 ”
         ALTGR_MASK|KEY_COMMA,           // 0x95 
         ALTGR_MASK|KEY_SLASH,           // 0x96 –
-        KEY_NONE,                       // 0x97 
-        KEY_NONE,                       // 0x98 
-        KEY_NONE,                       // 0x99 
-        KEY_NONE,                       // 0x9A 
-        KEY_NONE,                       // 0x9B 
-        KEY_NONE,                       // 0x9C 
+        ALTGR_MASK|SHIFT_MASK|KEY_SLASH,// 0x97 —
+        KEY_NONE,                       // 0x98 ˜
+        ALTGR_MASK|SHIFT_MASK|KEY_8,    // 0x99 ™
+        KEY_NONE,                       // 0x9A š
+        ALTGR_MASK|SHIFT_MASK|KEY_Y,    // 0x9B ›
+        KEY_NONE,                       // 0x9C œ
         KEY_NONE,                       // 0x9D 
-        KEY_NONE,                       // 0x9E 
-        KEY_NONE,                       // 0x9F 
- 
-        SHIFT_MASK|KEY_3,               // 0xA7
-        
+        KEY_NONE,                       // 0x9E ž
+        KEY_NONE,                       // 0x9F Ÿ
+        ALTGR_MASK|KEY_SPACE,           // 0xA0  (non-breaking space)
+        ALTGR_MASK|SHIFT_MASK|KEY_1,    // 0xA1 ¡
+        KEY_NONE,                       // 0xA2 ¢
+        ALTGR_MASK|SHIFT_MASK|KEY_3,    // 0xA3 £
+        ALTGR_MASK|SHIFT_MASK|KEY_4,    // 0xA4 ¤
+        ALTGR_MASK|SHIFT_MASK|KEY_Z,    // 0xA5 ¥
+        ALTGR_MASK|SHIFT_MASK|KEY_EUROPE_2_REAL,    // 0xA6 ¦
+        SHIFT_MASK|KEY_3,               // 0xA7 §
+        KEY_NONE,                       // 0xA8 ¨
+        ALTGR_MASK|SHIFT_MASK|KEY_C,    // 0xA9 ©
+        ALTGR_MASK|SHIFT_MASK|KEY_F,    // 0xAA ª
+        ALTGR_MASK|SHIFT_MASK|KEY_F,    // 0xAA ª
+        ALTGR_MASK|KEY_X,               // 0xAB «
         ALTGR_MASK|KEY_6,               // 0xAC ¬
- 
+        KEY_NONE,                       // 0xAD 
+        ALTGR_MASK|SHIFT_MASK|KEY_R,    // 0xAE ®
+        ALTGR_MASK|SHIFT_MASK|KEY_BRACKET_RIGHT,    // 0xAF ¯
         SHIFT_MASK|0x35,                // 0xB0 °
- 
+        ALTGR_MASK|SHIFT_MASK|KEY_9,    // 0xB1 ±
         ALTGR_MASK|KEY_2,               // 0xB2 ²
         ALTGR_MASK|KEY_3,               // 0xB3 ³
- 
+        KEY_NONE,                       // 0xB4 ´
         ALTGR_MASK|KEY_M,               // 0xB5 µ
- 
+        KEY_NONE,                       // 0xB6 ¶
         ALTGR_MASK|KEY_COMMA,           // 0xB7 ·
-
-        ALTGR_MASK|KEY_1,               // 0xB2 ¹
- 
+        KEY_NONE,                       // 0xB8 ¸
+        ALTGR_MASK|KEY_1,               // 0xB9 ¹
+        ALTGR_MASK|SHIFT_MASK|KEY_M,    // 0xBA º
         ALTGR_MASK|KEY_Z,               // 0xBB »
         ALTGR_MASK|KEY_4,               // 0xBC ¼
         ALTGR_MASK|KEY_5,               // 0xBD ½
- 
+        KEY_NONE,                       // 0xBE ¾
+        ALTGR_MASK|SHIFT_MASK|KEY_MINUS,// 0xBF ¿
+        KEY_NONE,                       // 0xC0 À
+        KEY_NONE,                       // 0xC1 Á
+        KEY_NONE,                       // 0xC2 Â
+        KEY_NONE,                       // 0xC3 Ã
         SHIFT_MASK|KEY_APOSTROPHE,      // 0xC4 Ä
-
+        KEY_NONE,                       // 0xC5 Å
         ALTGR_MASK|SHIFT_MASK|KEY_APOSTROPHE,      // 0xC6 Æ
-
- ¡⅛£¤⅜⅝⅞™±°¿˛
-  ΩŁ€®Ŧ¥↑ıØÞ°¯
-  ÆẞÐªŊĦ˙&Ł
-  ›‹©‚‘’º×÷—
+        KEY_NONE,                       // 0xC7 Ç
+        KEY_NONE,                       // 0xC8 È
+        KEY_NONE,                       // 0xC9 É
+        KEY_NONE,                       // 0xCA Ê
+        KEY_NONE,                       // 0xCB Ë
+        KEY_NONE,                       // 0xCC Ì
+        KEY_NONE,                       // 0xCD Í
+        KEY_NONE,                       // 0xCE Î
+        KEY_NONE,                       // 0xCF Ï
+        ALTGR_MASK|SHIFT_MASK|KEY_D,    // 0xD0 Ð
+        KEY_NONE,                       // 0xD1 Ñ
+        KEY_NONE,                       // 0xD2 Ò
+        KEY_NONE,                       // 0xD3 Ó
+        KEY_NONE,                       // 0xD4 Ô
+        KEY_NONE,                       // 0xD5 Õ
+        SHIFT_MASK|KEY_SEMICOLON,       // 0xD6 Ö
+        ALTGR_MASK|SHIFT_MASK|KEY_COMMA,// 0xD7 ×
+        ALTGR_MASK|SHIFT_MASK|KEY_O,    // 0xD8 Ø
+        KEY_NONE,                       // 0xD9 Ù
+        KEY_NONE,                       // 0xDA Ú
+        KEY_NONE,                       // 0xDB Û
+        SHIFT_MASK|KEY_BRACKET_LEFT,    // 0xDC Ü
+        KEY_NONE,                       // 0xDD Ý
+        ALTGR_MASK|SHIFT_MASK|KEY_P,    // 0xDE Þ
+        ALTGR_MASK|SHIFT_MASK|KEY_MINUS,// 0xDF ß
+        KEY_NONE,                       // 0xE0 à
+        KEY_NONE,                       // 0xE1 á
+        KEY_NONE,                       // 0xE2 â
+        KEY_NONE,                       // 0xE3 ã
+        KEY_APOSTROPHE,                 // 0xE4 ä
+        KEY_NONE,                       // 0xE5 å
+        ALTGR_MASK|KEY_A,               // 0xE6 æ
+        KEY_NONE,                       // 0xE7 ç
+        KEY_NONE,                       // 0xE8 è
+        KEY_NONE,                       // 0xE9 é
+        KEY_NONE,                       // 0xEA ê
+        KEY_NONE,                       // 0xEB ë
+        KEY_NONE,                       // 0xEC ì
+        KEY_NONE,                       // 0xED í
+        KEY_NONE,                       // 0xEE î
+        KEY_NONE,                       // 0xEF ï
+        KEY_NONE,                       // 0xF0 ð
+        KEY_NONE,                       // 0xF1 ñ
+        KEY_NONE,                       // 0xF2 ò
+        KEY_NONE,                       // 0xF3 ó
+        KEY_NONE,                       // 0xF4 ô
+        KEY_NONE,                       // 0xF5 õ
+        KEY_SEMICOLON,                  // 0xF6 ö
+        ALTGR_MASK|SHIFT_MASK|KEY_PERIOD,// 0xF7 ÷
+        ALTGR_MASK|KEY_O,               // 0xF8 ø
+        KEY_NONE,                       // 0xF9 ù
+        KEY_NONE,                       // 0xFA ú
+        KEY_NONE,                       // 0xFB û
+        KEY_BRACKET_LEFT,               // 0xFC ü
+        KEY_NONE,                       // 0xFD ý
+        KEY_NONE,                       // 0xFD þ
+        KEY_NONE                        // 0xFF ÿ
 };
